@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WireFrame 4</title>
+
+    <!-- 아이콘 -->
+    <!-- <link rel="stylesheet" href="./icon/css/font-awesome.css"> -->
+    <script src="./icon/fontawesome.js"></script>
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+<body>
+<div id="wrap"> <!-- 전체 그룹  -->
+    <header id="header"> <!-- 섹션별 행 단위  -->
+        <div class="wrap"> <!-- 웹 문서의 너비 1200px 영역 -->
+            <div class="content clearfix"> <!-- 두개의 박스 그룹 -->
+                <div class="left-box">
+
+                </div>
+                <div class="right-box">
+                    <nav id="nav">
+                        <ul class="main-btn-wrap clearfix">
+                            <li>
+                                <a href="#" class="main-btn">MENU-1</a>
+                                <div class="sub sub1">
+                                   <ul>
+                                       <li><a href="#">SubMenu-1</a></li>
+                                       <li><a href="#">SubMenu-2</a></li>
+                                       <li><a href="#">SubMenu-3</a></li>
+                                       <li><a href="#">SubMenu-4</a></li>
+                                   </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="main-btn">MENU-2</a>
+                                <div class="sub sub2">
+                                    <ul>
+                                        <li><a href="#">SubMenu-1</a></li>
+                                        <li><a href="#">SubMenu-2</a></li>
+                                        <li><a href="#">SubMenu-3</a></li>
+                                        <li><a href="#">SubMenu-4</a></li>
+                                    </ul>
+                                 </div>
+                            </li>
+                            <li>
+                                <a href="#" class="main-btn">MENU-3</a>
+                                <div class="sub sub3">
+                                    <ul>
+                                        <li><a href="#">SubMenu-1</a></li>
+                                        <li><a href="#">SubMenu-2</a></li>
+                                        <li><a href="#">SubMenu-3</a></li>
+                                        <li><a href="#">SubMenu-4</a></li>
+                                    </ul>
+                                 </div>
+                            </li>
+                            <li>
+                                <a href="#" class="main-btn">MENU-4</a>
+                                <div class="sub sub4">
+                                    <ul>
+                                        <li><a href="#">SubMenu-1</a></li>
+                                        <li><a href="#">SubMenu-2</a></li>
+                                        <li><a href="#">SubMenu-3</a></li>
+                                        <li><a href="#">SubMenu-4</a></li>
+                                    </ul>
+                                 </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section id="section1">
+            <h2  class="hide">이미지 슬라이드</h2>
+           
+            <!-- Zen Codding
+            div.slide-container>div.slide-view>ul.slide-wrap>li.slide.slide$@0*4 
+            -->           
+            <div class="slide-container">
+                <div class="slide-view">
+                    <ul class="slide-wrap"> <!--  애니메이션 대상 -->
+                        <li class="slide slide0"></li>
+                        <li class="slide slide1"></li>
+                        <li class="slide slide2"></li>
+                        <li class="slide slide3"></li>
+                    </ul> <!-- slide-wrap -->
+                </div> <!-- slide-view -->
+
+                <!-- 화살버튼(다음, 이전슬라이드 버튼) -->
+                <span class="next-btn-wrap">
+                    <a href="#" class="next-btn"></a>
+                </span>
+                <span class="prev-btn-wrap">
+                    <a href="#" class="prev-btn"></a>
+                </span>
+
+            </div> <!-- slide-container -->
+
+        </section>
+        <section id="section2">
+            <div class="content clearfix">
+                <div class="left-box">
+                    <h2  class="hide">갤러리 / 공지사항</h2>
+                    
+                    <div class="slide-container">
+                        <div class="slide-view">
+                            <ul class="slide-wrap clearfix">
+                                <li class="slide slide1"></li>
+                                <li class="slide slide2"></li>
+                                <li class="slide slide3"></li>
+                                <li class="slide slide4"></li>                                
+                            </ul>
+                        </div>
+
+                        <span class="next-btn-wrap">
+                            <a href="#" class="next-btn"></a>
+                        </span>
+
+                        <span class="prev-btn-wrap">
+                            <a href="#" class="prev-btn"></a>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="center-box">
+                    <h2  class="hide">배너</h2>
+                    <div class="slide-container">
+                        <div class="slide-view">
+                            <ul class="slide-wrap">
+                                <li class="slide slide1"></li>
+                                <li class="slide slide2"></li>
+                                <li class="slide slide3"></li>
+                                <li class="slide slide4"></li>
+                            </ul>
+                        </div>
+
+                        <span class="next-btn-wrap"><a href="#" class="next-btn"></a></span>
+                        <span class="prev-btn-wrap"><a href="#" class="prev-btn"></a></span>
+    
+                    </div>
+                </div>
+                <div class="right-box">
+                    <h2  class="hide">바로가기</h2>
+
+                    <div class="slide-container">
+                        <div class="slide-view">
+                            <ul class="slide-wrap clearfix">
+                                <li class="slide slide1"></li>
+                                <li class="slide slide2"></li>
+                                <li class="slide slide3"></li>
+                                <li class="slide slide4"></li>                                
+                            </ul>
+                        </div>
+
+                        <span class="next-btn-wrap">
+                            <a href="#" class="next-btn"></a>
+                        </span>
+
+                        <span class="prev-btn-wrap">
+                            <a href="#" class="prev-btn"></a>
+                        </span>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="wrap">
+            <div class="content clearfix">
+                <div class="left-box">
+
+                </div>
+                <div class="right-box">
+                    <div class="top-box">
+
+                    </div>
+                    <div class="bottom-box">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div> 
+<script src='./js/slide.js'></script>   
+</body>
+</html>

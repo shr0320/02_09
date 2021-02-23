@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+#wrap {width:100%;height:700px;background:#99c;}
+
+#wrap #header {z-index:3;position:relative;width:100%;height:100px;background:#c99;}
+#wrap #header .wrap {width:1200px;height:100%;margin:0 auto;background:#eea;}
+#wrap #header .wrap .content {width:100%;height:100%;background:#eee;}
+#wrap #header .wrap .content .left-box  {float:left;width:200px;height:100%;background:#fcc;}
+
+
+#wrap #header .wrap .content .right-box {float:left;width:1000px;height:100%;background:#ccf;}
+
+/* 네비게이션 */
+/* #wrap #header .wrap .content .right-box #nav {text-align:right;background:#00f;padding:25px 25px 25px 0;} */
+/* #wrap #header .wrap .content .right-box #nav {width:720px;text-align:right;margin:25px auto 25px auto;} 가운데 정렬 */
+/* #wrap #header .wrap .content .right-box #nav {width:720px;text-align:right;margin:25px auto 25px 0;} 왼쪽 정렬 */
+/* #wrap #header .wrap .content .right-box #nav {width:720px;text-align:right;margin:25px 0 25px auto;} 오른쪽 정렬 */
+#wrap #header .wrap .content .right-box #nav {width:auto;text-align:right;margin:25px 25px 25px 0;}
+#wrap #header .wrap .content .right-box #nav > ul {background:#c00;display:inline-block;}
+#wrap #header .wrap .content .right-box #nav > ul > li {float:left;background:#c99;width:180px;text-align:center;}
+#wrap #header .wrap .content .right-box #nav > ul > li > a {display:block;background:#f0f0f0;color:#000;line-height:50px;}
+#wrap #header .wrap .content .right-box #nav > ul > li > a:hover {background:#333;color:#fff;}
+
+/* 서브메뉴 */
+#wrap #header .wrap .content .right-box #nav > ul > li .sub {text-align:center;width:100%;display:none;}
+#wrap #header .wrap .content .right-box #nav:hover > ul > li .sub {display:block;}
+#wrap #header .wrap .content .right-box #nav > ul > li .sub > ul {width:100%;}
+#wrap #header .wrap .content .right-box #nav > ul > li .sub > ul > li {width:100%;}
+#wrap #header .wrap .content .right-box #nav > ul > li .sub > ul > li > a {display:block;background:#f6f6f6;line-height:45px;}
+#wrap #header .wrap .content .right-box #nav > ul > li .sub > ul > li > a:hover {background:#777;color:#fff;}
+
+
+#wrap #main   {z-index:2;position:relative;width:1200px;height:500px;margin:0 auto;background:#cc9;}
+#wrap #main   #section1 {width:100%;height:300px;background:#aae;}
+/* 메인 슬라이드 */
+#wrap #main   #section1 .slide-container {position:relative;width:100%;height:300px;}
+#wrap #main   #section1 .slide-container .slide-view {z-index:1;position:relative;width:100%;height:300px;overflow:hidden;}
+#wrap #main   #section1 .slide-container .slide-view .slide-wrap {position:relative;left:0;width:4800px;height:300px;transition:all 1s ease-in-out;}
+#wrap #main   #section1 .slide-container .slide-view .slide-wrap .slide {float:left;width:1200px;height:300px;}
+#wrap #main   #section1 .slide-container .slide-view .slide-wrap .slide0 {background:url(../img/pasta-1181189_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section1 .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/raspberries-5576401_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section1 .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/raspberry-2023404_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section1 .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/waffles-5192625_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+
+/* 다음 이전 슬라이드 버튼 */
+#wrap #main   #section1 .slide-container .next-btn-wrap {z-index:2;display:block;position:absolute;top:50%;margin-top:-30px;right:50px;width:60px;height:60px;transform:rotate(45deg);border-top:1px solid #fff;border-right:1px solid #fff;}
+#wrap #main   #section1 .slide-container .next-btn-wrap a {display:block;width:100%;height:100%;}
+
+#wrap #main   #section1 .slide-container .prev-btn-wrap {z-index:2;display:block;position:absolute;top:50%;margin-top:-30px;left:50px;width:60px;height:60px;transform:rotate(-135deg);border-top:1px solid #fff;border-right:1px solid #fff;}
+#wrap #main   #section1 .slide-container .prev-btn-wrap a {display:block;width:100%;height:100%;}
+
+
+#wrap #main   #section2 {width:100%;height:200px;background:#aea;}
+#wrap #main   #section2 .content {width:100%;height:100%;}
+#wrap #main   #section2 .content .left-box {float:left;width:33.33333%;height:100%;background:#eff;cursor:pointer;}
+#wrap #main   #section2 .content .left-box .slide-container {position:relative;width:100%;height:100%;}
+#wrap #main   #section2 .content .left-box .slide-container .slide-view {z-index:1;position:relative;width:100%;height:100%;overflow:/* visible */hidden;}
+#wrap #main   #section2 .content .left-box .slide-container .slide-view .slide-wrap {position:relative;left:0;width:1600px;height:100%;transition:all .6s ease-in-out;}
+#wrap #main   #section2 .content .left-box .slide-container .slide-view .slide-wrap .slide {float:left;width:400px;height:100%;}
+#wrap #main   #section2 .content .left-box .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/blog-post-img6.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section2 .content .left-box .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/blog-post-img4.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section2 .content .left-box .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/blog-post-img5.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section2 .content .left-box .slide-container .slide-view .slide-wrap .slide4 {background:url(../img/blog-post-img7.jpg) no-repeat 50% 50%;background-size:cover;}
+/* 좌우화살버튼 */
+#wrap #main   #section2 .content .left-box .slide-container .next-btn-wrap {z-index:1;display:block;position:absolute;top:50%;margin-top:-20px;right:20px;width:40px;height:40px;background:transparent;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg);}
+#wrap #main   #section2 .content .left-box .slide-container .next-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+
+#wrap #main   #section2 .content .left-box .slide-container .prev-btn-wrap {z-index:1;display:block;position:absolute;top:50%;margin-top:-20px;left:20px;width:40px;height:40px;background:transparent;border-top:2px solid #fff;border-left:2px solid #fff;transform:rotate(-45deg);}
+#wrap #main   #section2 .content .left-box .slide-container .prev-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+
+
+
+#wrap #main   #section2 .content .center-box {float:left;width:33.33333%;height:100%;background:#eef;text-align:center;}
+#wrap #main   #section2 .content .center-box .slide-container {position:relative;width:100%;height:100%;}
+#wrap #main   #section2 .content .center-box .slide-container .slide-view {z-index:1;position:relative;width:100%;height:100%;overflow:hidden;}
+#wrap #main   #section2 .content .center-box .slide-container .slide-view .slide-wrap {position:relative;top:0;width:100%;height:800px;transition:all .6s ease-in-out;}
+#wrap #main   #section2 .content .center-box .slide-container .slide-view .slide-wrap .slide {width:100%;height:200px;}
+#wrap #main   #section2 .content .center-box .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/restaurant-img28.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section2 .content .center-box .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/restaurant-img29.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section2 .content .center-box .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/restaurant-img30.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section2 .content .center-box .slide-container .slide-view .slide-wrap .slide4 {background:url(../img/restaurant-img31.jpg) no-repeat 50% 50%;background-size:cover;}
+/* 위아래 화살버튼 */
+#wrap #main   #section2 .content .center-box .slide-container .next-btn-wrap {z-index:2;display:block;position:absolute;left:50%;margin-left:-20px;top:20px;width:40px;height:40px;border-top:2px solid #fff;border-left:2px solid #fff;transform:rotate(45deg);}
+#wrap #main   #section2 .content .center-box .slide-container .next-btn-wrap a {display:block;width:100%;height:100%;}
+
+#wrap #main   #section2 .content .center-box .slide-container .prev-btn-wrap {z-index:2;display:block;position:absolute;left:50%;margin-left:-20px;bottom:20px;width:40px;height:40px;border-bottom:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg);}
+#wrap #main   #section2 .content .center-box .slide-container .prev-btn-wrap a {display:block;width:100%;height:100%;}
+
+#wrap #main   #section2 .content .right-box  {float:left;width:33.33333%;height:100%;background:#ffe;cursor:pointer;}
+#wrap #main   #section2 .content .right-box .slide-container {position:relative;width:100%;height:100%;}
+#wrap #main   #section2 .content .right-box .slide-container .slide-view {z-index:1;position:relative;width:100%;height:100%;overflow:/* visible */hidden;}
+#wrap #main   #section2 .content .right-box .slide-container .slide-view .slide-wrap {position:relative;left:0;width:1600px;height:100%;transition:all .6s ease-in-out;}
+#wrap #main   #section2 .content .right-box .slide-container .slide-view .slide-wrap .slide {float:left;width:400px;height:100%;}
+#wrap #main   #section2 .content .right-box .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/restaurant-img25.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section2 .content .right-box .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/restaurant-img26.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section2 .content .right-box .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/restaurant-img27.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main   #section2 .content .right-box .slide-container .slide-view .slide-wrap .slide4 {background:url(../img/restaurant-img32.jpg) no-repeat 50% 50%;background-size:cover;}
+/* 좌우화살버튼 */
+#wrap #main   #section2 .content .right-box .slide-container .next-btn-wrap {z-index:1;display:block;position:absolute;top:50%;margin-top:-20px;right:20px;width:40px;height:40px;background:transparent;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg);}
+#wrap #main   #section2 .content .right-box .slide-container .next-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+
+#wrap #main   #section2 .content .right-box .slide-container .prev-btn-wrap {z-index:1;display:block;position:absolute;top:50%;margin-top:-20px;left:20px;width:40px;height:40px;background:transparent;border-top:2px solid #fff;border-left:2px solid #fff;transform:rotate(-45deg);}
+#wrap #main   #section2 .content .right-box .slide-container .prev-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+
+
+
+
+
+
+
+#wrap #footer {z-index:1;position:relative;width:100%;height:100px;background:#9cc;}
+#wrap #footer .wrap {width:1200px;height:100%;background:#eea;margin:0 auto;}
+#wrap #footer .wrap .content {width:100%;height:100%;}
+#wrap #footer .wrap .content .left-box  {float:left;width:200px;height:100%;background:#ddd;}
+#wrap #footer .wrap .content .right-box {float:left;width:1000px;height:100%;background:#ccc;}
+#wrap #footer .wrap .content .right-box .top-box {width:100%;height:50%;background:#dcc;}
+#wrap #footer .wrap .content .right-box .bottom-box {width:100%;height:50%;background:#ccd;}
